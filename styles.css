@@ -1,0 +1,76 @@
+:root {
+  --dark400: #4c5265;
+  --dark700: #313949;
+  --dark900: #212129;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: var(--dark900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+main {
+  width: 500px;
+  height: 300px;
+  background-color: var(--dark700);
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main>h1 {
+  color: white;
+}
+
+main>input,
+.buttons>button {
+  height: 32px;
+  margin-bottom: 16px;
+  border-radius: 1rem;
+}
+
+main>input {
+  width: calc(300px - 32px);
+  padding: 0 16px 0 16px;
+  text-align: right;
+  font-size: 24px;
+}
+
+main>input::-webkit-inner-spin-button,
+main>input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.buttons {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.buttons>button {
+  width: 50%;
+  height: 40px;
+  color: white;
+  background-color: var(--dark400);
+  cursor: pointer;
+  transition: filter 0.3s ease-in-out;
+}
+
+.buttons>button:hover {
+  filter: brightness(150%);
+}
+
+#result {
+  color: white;
+  font-size: 28px;
+}
